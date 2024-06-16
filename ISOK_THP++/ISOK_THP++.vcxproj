@@ -17,7 +17,6 @@
       <Configuration>Release</Configuration>
       <Platform>x64</Platform>
     </ProjectConfiguration>
-
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
@@ -53,27 +52,24 @@
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
-
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
   </ImportGroup>
-  <ImportGroup Label="Shared" >
+  <ImportGroup Label="Shared">
   </ImportGroup>
-    <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-      <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    </ImportGroup>
-    <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-      <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    </ImportGroup>
-    <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-      <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    </ImportGroup>
-    <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-      <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    </ImportGroup>
-
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -122,6 +118,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <OpenMPSupport>true</OpenMPSupport>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -130,9 +128,56 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-
-  <ItemGroup></ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Galois\src\field.cpp" />
+    <ClCompile Include="Galois\src\primes.cpp" />
+    <ClCompile Include="LongInt\Compare.cpp" />
+    <ClCompile Include="LongInt\Conversation.cpp" />
+    <ClCompile Include="LongInt\Division.cpp" />
+    <ClCompile Include="LongInt\Factorial.cpp" />
+    <ClCompile Include="LongInt\Gcd.cpp" />
+    <ClCompile Include="LongInt\Icbrt.cpp" />
+    <ClCompile Include="LongInt\Isqrt.cpp" />
+    <ClCompile Include="LongInt\Lcm.cpp" />
+    <ClCompile Include="LongInt\Multiply.cpp" />
+    <ClCompile Include="LongInt\Pow.cpp" />
+    <ClCompile Include="LongInt\Primitive.cpp" />
+    <ClCompile Include="LongInt\Random.cpp" />
+    <ClCompile Include="LongInt\Subtraction.cpp" />
+    <ClCompile Include="LongInt\Sum.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="method_ISOK\coder_isok.cpp" />
+    <ClCompile Include="method_ISOK\decoder_isok.cpp" />
+    <ClCompile Include="method_ISOK\key_gen_isok.cpp" />
+    <ClCompile Include="method_THP\coder_thp.cpp" />
+    <ClCompile Include="method_THP\decoder_thp.cpp" />
+    <ClCompile Include="method_THP\key_gen_thp.cpp" />
+    <ClCompile Include="method_THP\matrix_operations.cpp" />
+    <ClCompile Include="operation\corruption.cpp" />
+    <ClCompile Include="operation\count.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Galois\include\galois++\array2d.h" />
+    <ClInclude Include="Galois\include\galois++\element.h" />
+    <ClInclude Include="Galois\include\galois++\field.h" />
+    <ClInclude Include="Galois\include\galois++\fwd.h" />
+    <ClInclude Include="Galois\include\galois++\primes.h" />
+    <ClInclude Include="LongInt\LongInt.h" />
+    <ClInclude Include="method_ISOK\isok.h" />
+    <ClInclude Include="method_THP\thp.h" />
+    <ClInclude Include="operation\operation.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\packages\Aspose.Cells.Cpp.24.5.0\build\native\Aspose.Cells\aspose.cells.cpp.targets" Condition="Exists('..\packages\Aspose.Cells.Cpp.24.5.0\build\native\Aspose.Cells\aspose.cells.cpp.targets')" />
   </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Aspose.Cells.Cpp.24.5.0\build\native\Aspose.Cells\aspose.cells.cpp.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Aspose.Cells.Cpp.24.5.0\build\native\Aspose.Cells\aspose.cells.cpp.targets'))" />
+  </Target>
 </Project>

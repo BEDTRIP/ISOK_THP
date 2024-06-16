@@ -13,5 +13,132 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\Galois++">
+      <UniqueIdentifier>{d1b19581-4982-4262-9f5b-1b996d55dddb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\LongInt">
+      <UniqueIdentifier>{125ee5de-bc98-4068-a74e-e13853be6081}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\method_ISOK">
+      <UniqueIdentifier>{dc0dd87b-22c6-40eb-b0d9-9aea6c7780d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\method_THP">
+      <UniqueIdentifier>{bbdd5eed-3f1a-4f6b-be7b-b23dfc7f78d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\operations">
+      <UniqueIdentifier>{9c3ba9d5-78ff-467a-8b95-4903981ef2cf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Galois\src\field.cpp">
+      <Filter>Source Files\Galois++</Filter>
+    </ClCompile>
+    <ClCompile Include="Galois\src\primes.cpp">
+      <Filter>Source Files\Galois++</Filter>
+    </ClCompile>
+    <ClCompile Include="LongInt\Compare.cpp">
+      <Filter>Source Files\LongInt</Filter>
+    </ClCompile>
+    <ClCompile Include="LongInt\Conversation.cpp">
+      <Filter>Source Files\LongInt</Filter>
+    </ClCompile>
+    <ClCompile Include="LongInt\Division.cpp">
+      <Filter>Source Files\LongInt</Filter>
+    </ClCompile>
+    <ClCompile Include="LongInt\Factorial.cpp">
+      <Filter>Source Files\LongInt</Filter>
+    </ClCompile>
+    <ClCompile Include="LongInt\Gcd.cpp">
+      <Filter>Source Files\LongInt</Filter>
+    </ClCompile>
+    <ClCompile Include="LongInt\Icbrt.cpp">
+      <Filter>Source Files\LongInt</Filter>
+    </ClCompile>
+    <ClCompile Include="LongInt\Isqrt.cpp">
+      <Filter>Source Files\LongInt</Filter>
+    </ClCompile>
+    <ClCompile Include="LongInt\Lcm.cpp">
+      <Filter>Source Files\LongInt</Filter>
+    </ClCompile>
+    <ClCompile Include="LongInt\Multiply.cpp">
+      <Filter>Source Files\LongInt</Filter>
+    </ClCompile>
+    <ClCompile Include="LongInt\Pow.cpp">
+      <Filter>Source Files\LongInt</Filter>
+    </ClCompile>
+    <ClCompile Include="LongInt\Primitive.cpp">
+      <Filter>Source Files\LongInt</Filter>
+    </ClCompile>
+    <ClCompile Include="LongInt\Random.cpp">
+      <Filter>Source Files\LongInt</Filter>
+    </ClCompile>
+    <ClCompile Include="LongInt\Subtraction.cpp">
+      <Filter>Source Files\LongInt</Filter>
+    </ClCompile>
+    <ClCompile Include="LongInt\Sum.cpp">
+      <Filter>Source Files\LongInt</Filter>
+    </ClCompile>
+    <ClCompile Include="method_ISOK\coder_isok.cpp">
+      <Filter>Source Files\method_ISOK</Filter>
+    </ClCompile>
+    <ClCompile Include="method_ISOK\decoder_isok.cpp">
+      <Filter>Source Files\method_ISOK</Filter>
+    </ClCompile>
+    <ClCompile Include="method_ISOK\key_gen_isok.cpp">
+      <Filter>Source Files\method_ISOK</Filter>
+    </ClCompile>
+    <ClCompile Include="method_THP\coder_thp.cpp">
+      <Filter>Source Files\method_THP</Filter>
+    </ClCompile>
+    <ClCompile Include="method_THP\decoder_thp.cpp">
+      <Filter>Source Files\method_THP</Filter>
+    </ClCompile>
+    <ClCompile Include="method_THP\key_gen_thp.cpp">
+      <Filter>Source Files\method_THP</Filter>
+    </ClCompile>
+    <ClCompile Include="method_THP\matrix_operations.cpp">
+      <Filter>Source Files\method_THP</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\corruption.cpp">
+      <Filter>Source Files\operations</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\count.cpp">
+      <Filter>Source Files\operations</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Galois\include\galois++\array2d.h">
+      <Filter>Source Files\Galois++</Filter>
+    </ClInclude>
+    <ClInclude Include="Galois\include\galois++\element.h">
+      <Filter>Source Files\Galois++</Filter>
+    </ClInclude>
+    <ClInclude Include="Galois\include\galois++\field.h">
+      <Filter>Source Files\Galois++</Filter>
+    </ClInclude>
+    <ClInclude Include="Galois\include\galois++\fwd.h">
+      <Filter>Source Files\Galois++</Filter>
+    </ClInclude>
+    <ClInclude Include="Galois\include\galois++\primes.h">
+      <Filter>Source Files\Galois++</Filter>
+    </ClInclude>
+    <ClInclude Include="operation\operation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="method_THP\thp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="method_ISOK\isok.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LongInt\LongInt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
 </Project>
