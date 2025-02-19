@@ -3,6 +3,7 @@
 #include <iostream>
 #include <numeric>
 
+
 using namespace std;
 
 static int trunc_log2(const LongInt& y)

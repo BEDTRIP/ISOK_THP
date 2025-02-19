@@ -32,7 +32,7 @@
  */
 #pragma once
 
-#include "C:\Users\Peka\Documents\_C++\ISOK_THP++\ISOK_THP++\Galois\include\galois++\array2d.h"
+#include "array2d.h"
 #include <iostream>
 
 namespace Galois

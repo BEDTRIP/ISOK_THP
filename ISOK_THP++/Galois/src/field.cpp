@@ -30,8 +30,8 @@
    work.
    </blockquote>
  */
-#include "C:\Users\Peka\Documents\_C++\ISOK_THP++\ISOK_THP++\Galois\include\galois++/field.h"
-#include "C:\Users\Peka\Documents\_C++\ISOK_THP++\ISOK_THP++\Galois\include\galois++/primes.h"
+#include "..\include\galois++\field.h"
+#include "..\include\galois++\primes.h"
 #include <cmath>
 #include <iomanip>
 #include <iostream>

@@ -5,7 +5,7 @@
  */
 #pragma once
 
-#include "C:\Users\Peka\Documents\_C++\ISOK_THP++\ISOK_THP++\Galois\include\galois++/field.h"
+#include "field.h"
 #include <assert.h>
 #include <iostream>
 #include <stdexcept>

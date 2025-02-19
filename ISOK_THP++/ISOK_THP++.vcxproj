@@ -104,6 +104,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <OpenMPSupport>yes</OpenMPSupport>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -172,12 +174,12 @@
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
-    <Import Project="..\packages\Aspose.Cells.Cpp.24.5.0\build\native\Aspose.Cells\aspose.cells.cpp.targets" Condition="Exists('..\packages\Aspose.Cells.Cpp.24.5.0\build\native\Aspose.Cells\aspose.cells.cpp.targets')" />
+    <Import Project="..\packages\Aspose.Cells.Cpp.25.2.0\build\native\Aspose.Cells\aspose.cells.cpp.targets" Condition="Exists('..\packages\Aspose.Cells.Cpp.25.2.0\build\native\Aspose.Cells\aspose.cells.cpp.targets')" />
   </ImportGroup>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
-      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+      <ErrorText>Данный проект ссылается на пакеты NuGet, отсутствующие на этом компьютере. Используйте восстановление пакетов NuGet, чтобы скачать их.  Дополнительную информацию см. по адресу: http://go.microsoft.com/fwlink/?LinkID=322105. Отсутствует следующий файл: {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\Aspose.Cells.Cpp.24.5.0\build\native\Aspose.Cells\aspose.cells.cpp.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Aspose.Cells.Cpp.24.5.0\build\native\Aspose.Cells\aspose.cells.cpp.targets'))" />
+    <Error Condition="!Exists('..\packages\Aspose.Cells.Cpp.25.2.0\build\native\Aspose.Cells\aspose.cells.cpp.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Aspose.Cells.Cpp.25.2.0\build\native\Aspose.Cells\aspose.cells.cpp.targets'))" />
   </Target>
 </Project>
